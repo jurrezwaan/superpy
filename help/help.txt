@@ -1,0 +1,56 @@
+usage: SuperPy [-h] [-c] [-r] [-a] [-i] {buy,sell,report} ...
+
+Welcome to the 3Fruits supermarket command line interface
+
+positional arguments:
+  {buy,sell,report}
+    buy                buy product
+    sell               sell product
+    report             report cost, revenue and profit
+
+options:
+  -h, --help           show this help message and exit
+  -c, --clear          clear csv files
+  -r, --reset-date     set date to today
+  -a, --advance-time   advance time with days input: number of days
+  -i, --input-date     give set date input: YYYY-MM-DD
+
+
+
+
+
+usage: SuperPy buy [-h] -p  -b  -e
+
+options:
+  -h, --help            show this help message and exit
+  -p, --product-name    apple, banana or pear
+  -b, --buy-price       give buy price
+  -e, --expiration-date 
+                        yyyy-mm-dd
+
+
+
+usage: SuperPy sell [-h] -p  -s
+
+options:
+  -h, --help           show this help message and exit
+  -p, --product-name   apple, banana or pear
+  -s, --sell-price     give buy price
+
+
+usage: SuperPy report [-h] [--sold-today] [--bought-today] [--profit-today]
+                      [--sold-month] [--bought-month] [--profit-month]
+                      [--inventory] [--sold] [--bought] [--products]
+
+options:
+  -h, --help       show this help message and exit
+  --sold-today     products sold today
+  --bought-today   products bought today
+  --profit-today   profit of today
+  --sold-month     products sold in month input: YYYY-MM
+  --bought-month   products bought in month input: YYYY-MM
+  --profit-month   profit in month input: YYYY-MM
+  --inventory      show inventory
+  --sold           show products sold
+  --bought         show products bought
+  --products       show which products the store has

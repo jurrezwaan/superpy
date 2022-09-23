@@ -1,0 +1,4 @@
+id,product_name,buy_date,buy_price,expiration_date
+1,apple,2022-08-11,0.10,2022-09-01
+2,apple,2022-08-11,0.10,2021-09-01
+3,apple,2022-08-11,0.10,2021-09-01
